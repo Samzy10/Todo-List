@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url(prophsee-journals-vD9Gb_H7RR8-unsplash.jpg)
+     no-repeat center center/cover;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+
+#add-task-container {
+    width: 350px;
+    padding: 20px 10px;
+    background-color: rgb(31, 21, 21);
+    border-radius: 20px;
+    box-shadow: 0 0 4px #fff;
+    margin-bottom: 20px;
+
+    display: flex;
+}
+
+input {
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#add-task {
+    flex: 1;
+
+    font-size: 1.2rem;
+    padding: 5px;
+
+    background-color: #fff;
+    color: green;
+    border-radius: 10px;
+    border: green solid 2px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+#add-task:hover {
+    background-color: green;
+    color: #fff;
+    border: white solid 2px;
+}
+#add-task:active {
+    opacity: .5;
+}
+
+.task {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 4px black;
+    padding: 5px;
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.task li {
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 5px
+
+}
+
+.task button {
+    flex: 1;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.task .checkTask {
+    color: rgb(175, 118, 12);
+    margin-right: 5px;
+    border: solid 2px rgb(175, 118, 12);
+    font-size: 1.5rem;
+}
+.task .checkTask:hover {
+    background-color: rgb(175, 118, 12);
+    color: #fff;
+    /* border: solid 2px #fff */
+}
+.task .checkTask:active {
+    opacity: .5;
+}
+
+
+.task .deleteTask {
+    color: rgb(150, 8, 8);
+    margin-right: 5px;
+    border: solid 2px rgb(150, 8, 8);
+    font-size: 1.5rem;
+}
+.task .deleteTask:hover {
+    background-color: rgb(150, 8, 8);
+    color: #fff;
+    /* border: solid 2px #fff */
+}
+.task .deleteTask:active {
+    opacity: .5;
+}
